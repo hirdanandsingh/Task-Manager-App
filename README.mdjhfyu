@@ -1,0 +1,39 @@
+# Task Management API
+
+A Node.js-based RESTful API for user authentication and task management.
+
+## 🚀 Features
+
+- User registration and login (JWT-based authentication)
+- Task creation, retrieval, updating, and deletion
+- Middleware for authentication
+- Modular folder structure (MVC-based)
+
+## 🧾 Technologies Used
+
+- Node.js
+- Express.js
+- MongoDB (via Mongoose)
+- JSON Web Tokens (JWT)
+- Dotenv
+
+## 📁 Project Structure
+
+```
+task-management/
+├── .env
+├── app.js
+├── controllers/
+│   ├── authController.js
+│   └── taskController.js
+├── models/
+│   ├── User.js
+│   └── Task.js
+├── routes/
+│   ├── authRoutes.js
+│   └── taskRoutes.js
+└── utils/
+    ├── authMiddleware.js
+    └── errorHandler.js
+```
+
