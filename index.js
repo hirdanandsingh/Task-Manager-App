@@ -17,6 +17,11 @@ app.use(express.json());
 // Connect to DB
 connectDB();
 
+app.use("/", (req, res) => {
+    console.log("Server connected..")
+}
+)
+
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/tasks', taskRoutes);
