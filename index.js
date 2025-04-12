@@ -17,7 +17,7 @@ app.use(express.json());
 // Connect to DB
 connectDB();
 
-app.use("/", (req, res) => {
+app.get("/", (req, res) => {
     res.send("Server connected..")
 }
 )
