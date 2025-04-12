@@ -18,7 +18,7 @@ app.use(express.json());
 connectDB();
 
 app.use("/", (req, res) => {
-    console.log("Server connected..")
+    res.send("Server connected..")
 }
 )
 
